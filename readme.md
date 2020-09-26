@@ -1,28 +1,28 @@
-1.ÉèÖÃÓÃ»§ÃûºÍÃÜÂë
+1.è®¾ç½®ç”¨æˆ·åå’Œå¯†ç 
 
 git config --global user.email "you@example.com"
 
 git config --global user.name "Your Name"
 
-2.Éú³ÉÃÜÔ¿¶Ô
+2.ç”Ÿæˆå¯†é’¥å¯¹
 
 ssh-keygen -t rsa -C "your_email@youremail.com"
 
-3.ÅäÖÃ¹«Ô¿µ½git
+3.é…ç½®å…¬é’¥åˆ°git
 
-ÓÃ»§Ä¿Â¼/.ssh
+ç”¨æˆ·ç›®å½•/.ssh
 
-ÉèÖÃ SSH and GPG keys
+è®¾ç½® SSH and GPG keys
 
-4.ÑéÖ¤ÃÜÔ¿
+4.éªŒè¯å¯†é’¥
 
 ssh -T git@github.com
 
-5.²é¿´remote url
+5.æŸ¥çœ‹remote url
 
 git remote -v
 
-6.´´½¨±¾µØ²Ö¿â
+6.åˆ›å»ºæœ¬åœ°ä»“åº“
 
 mkdir test
 
@@ -30,11 +30,11 @@ cd test
 
 git init
 
-7.Ìí¼ÓÔ¶³Ì²Ö¿â
+7.æ·»åŠ è¿œç¨‹ä»“åº“
 
 git remote add origin git@github.com:user/test.git
 
-8.´´½¨ÎÄ¼ş
+8.åˆ›å»ºæ–‡ä»¶
 
 touch readme
 
@@ -42,20 +42,20 @@ git add .
 
 git commit -m "add readme"
 
-9.ÍÆËÍ±¾µØ²Ö¿âµ½Ô¶³Ì²Ö¿â
+9.æ¨é€æœ¬åœ°ä»“åº“åˆ°è¿œç¨‹ä»“åº“
 
 git push -u origin master
 
 
-10.¿ËÂ¡Ô¶³Ì²Ö¿â
+10.å…‹éš†è¿œç¨‹ä»“åº“
 
 git clone git@github.com:user/test.git
 
-11.½øÈë²Ö¿â
+11.è¿›å…¥ä»“åº“
 
 cd test
 
-12.´´½¨ÎÄ¼ş
+12.åˆ›å»ºæ–‡ä»¶
 
 touch readme
 
@@ -63,15 +63,16 @@ git add .
 
 git commit -m "add readme"
 
-13.ÍÆËÍ±¾µØ²Ö¿âµ½Ô¶³Ì²Ö¿â ĞÂÎÄ¼ş
+13.æ¨é€æœ¬åœ°ä»“åº“åˆ°è¿œç¨‹ä»“åº“ æ–°æ–‡ä»¶
 
 git push -u origin master
 
-14.½øÈë±¾µØ²Ö¿â
+
+14.è¿›å…¥æœ¬åœ°ä»“åº“
 
 cd test
 
-15.Ìí¼Ó±¾µØ²Ö¿âµ½Ô¶³Ì²Ö¿â
+15.æ·»åŠ æœ¬åœ°ä»“åº“åˆ°è¿œç¨‹ä»“åº“
 
 git remote  rename origin old-origin
 
@@ -80,3 +81,45 @@ git remote add origin git@github.com:user/test.git
 git push -u origin --all
 
 git push -u origin --tags
+
+16.æŸ¥çœ‹çŠ¶æ€
+
+git status
+
+17.åˆ›å»ºåˆ†æ”¯
+
+git branch branch_name
+
+18.åˆ‡æ¢åˆ†æ”¯
+
+git checkout branch_name
+
+19.æäº¤åˆ†æ”¯
+
+git add .
+
+git commit -m "branch_name"
+
+git push -u origin branch_name
+
+20.æ‹‰å–è¿œç¨‹ä»“åº“
+
+git checkout master
+
+git pull origin master
+
+21.åˆå¹¶åˆ†æ”¯
+
+git merge origin/branch_name
+
+git add .
+
+git commit -m "master+branch_name"
+
+20.æŸ¥çœ‹çŠ¶æ€
+
+git status
+
+21.æäº¤åˆå¹¶åˆ†æ”¯
+
+git pull origin master
