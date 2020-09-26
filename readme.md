@@ -46,7 +46,6 @@ git commit -m "add readme"
 
 git push -u origin master
 
-
 10.克隆远程仓库
 
 git clone git@github.com:user/test.git
@@ -66,7 +65,6 @@ git commit -m "add readme"
 13.推送本地仓库到远程仓库 新文件
 
 git push -u origin master
-
 
 14.进入本地仓库
 
